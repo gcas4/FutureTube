@@ -15,6 +15,21 @@ header {
     align-items: center;
 }
 
+nav {
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+nav ul li:nth-child(4) {
+    border-bottom: 1px solid;
+}
+
 footer {
     width: 100%;
     height: 10%;
@@ -39,15 +54,15 @@ footer {
     color: white;
 }
 
-section {
+.principal {
     position: relative;
-    /* top: 10vh; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
     gap: 1rem;
-    margin: 2rem;
+    padding: 2rem;
+    border-left: 1px solid;
 }
 
 .itemheader {
@@ -124,17 +139,43 @@ a {
 
 /* Páginas dos vídeos */
 
-div {
+.disposicao {
+    display: grid;
     height: 80%;
+    width: 90%;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.videos {
+    width: 60%;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+.videos div {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 video {
-    width: 60%;
+    width: 100%;
     text-align: center;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+}
+
+.videosSugeridos {
+    width: 40%;
+    float: right;
+    display: grid;
+    grid-column: 2/3;
 }
 
 
@@ -151,12 +192,10 @@ video {
     }
     section {
         margin: 0;
+        display: block;
     }
     input {
         width: 30%;
-    }
-    section {
-        display: block;
     }
     .posts {
         margin-bottom: 5%;
