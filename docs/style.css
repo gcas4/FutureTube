@@ -158,4 +158,8 @@ button {
         width: 60%;
         padding-left: 10px;
     }
+    nav ul li {
+        list-style-type: none;
+        padding: 5px 1px;
+    }
 }
